@@ -1,0 +1,15 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+	cout << "enter how many rows you want : ";
+	int no_of_rows;
+	cin >> no_of_rows;
+	for (int row = 1; row <= no_of_rows; row++) {
+		for (int spaces = no_of_rows - row; spaces >= 1; spaces--)cout << " ";
+		for (int number = row; number <=(row +( row - 1)); number++)cout << number;
+		for (int second_triangle = (row + (row - 1)) ; second_triangle >= row; second_triangle--)cout << second_triangle;
+		cout << endl;
+	}
+	
+}
